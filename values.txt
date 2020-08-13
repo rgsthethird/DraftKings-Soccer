@@ -1,0 +1,107 @@
+Trent Alexander-Arnold	D	7500	15.34	84.32	22
+Kevin De Bruyne	M	11000	30.3	77.77	22
+Sadio Mane	M/F	9600	15.06	78.00	23
+Mohamed Salah	M/F	9800	7.06	78.86	22
+Raheem Sterling	M/F	9000	7.34	79.33	24
+Pierre-Emerick Aubameyang	F	7900	18.54	89.33	18
+Sergio Aguero	F	9300	14.34	56.06	18
+Bernd Leno	GK	4600	0.38	90.00	18
+Roberto Firmino	M/F	8200	5.4	77.83	23
+Alisson	GK	5900	14.48	84.92	13
+Emerson Palmieri	D	4900	0.18	60.13	15
+Mesut Ozil	M	6000	7.64	66.90	10
+Alexandre Lacazette	F	6400	3.78	48.36	14
+Willian	M/F	9200	22.78	73.52	23
+John Fleck	M	4900	6.6	85.93	15
+Mason Mount	M	7200	10.72	74.08	24
+Joao Moutinho	M	5800	10.64	85.00	18
+Cesar Azpilicueta	D	4500	8.4	82.08	24
+Dean Henderson	GK	3600	0.28	85.00	18
+Tammy Abraham	F	8300	17.18	77.00	23
+Riyad Mahrez	M/F	8700	16.2	50.75	24
+Oleksandr Zinchenko	D	4300	14.42	64.00	11
+Reiss Nelson	M/F	5200	3.08	20.25	12
+Claudio Bravo	GK	5800	10.56	9.35	23
+Rui Patricio	GK	3700	2.3	90.00	18
+Diogo Jota	M/F	5900	3.94	76.25	16
+Virgil van Dijk	D	4300	5.68	90.00	23
+David Luiz	D	3100	1.8	75.00	18
+Andrew Robertson	D	6000	7.62	82.43	23
+Jonny	D	3400	5.64	80.56	18
+Kepa Arrizabalaga	GK	5000	5.36	90.00	24
+Georginio Wijnaldum	M	3700	2.78	76.32	22
+Kyle Walker	D	4200	5.5	62.70	23
+Ainsley Maitland-Niles	D	3800	5.54	63.33	12
+N'Golo Kante	M	4500	6.48	74.93	15
+George Baldock	D	4100	2.54	90.00	18
+Bernardo Silva	M/F	8000	2.74	59.43	23
+Matteo Guendouzi	M	3600	3.5	73.06	18
+Mateo Kovacic	M	4700	4.82	69.83	24
+Ruben Vinagre	D	3200	4.24	10.56	18
+Bukayo Saka	M/F	4800	2.44	41.33	12
+Enda Stevens	D	3900	3.24	90.00	18
+Adam Lallana	M	4800	7.08	10.30	20
+Lys Mousset	F	5000	6.24	45.60	15
+Calum Chambers	D	3300	9	60.00	18
+Fikayo Tomori	D	3500	2.26	65.45	22
+Antonio Rudiger	D	3300	1.86	78.75	4
+Ruben Neves	M	3900	3.66	78.44	18
+Oliver Norwood	M	4300	7.76	83.00	18
+Rodri	M	4400	6.82	72.76	21
+Conor Coady	D	2900	3.48	90.00	18
+Christian Pulisic	M/F	7300	0	54.48	23
+Jordan Henderson	M	5200	5.02	64.55	22
+Joe Gomez	D	4000	9.7	25.52	23
+Adama Traore	M/F	7100	5.28	76.17	18
+Raul Jimenez	F	6800	3.06	86.94	18
+Kurt Zouma	D	3700	1.08	85.48	23
+Angelino	D	5100	0	30.12	17
+Lucas Torreira	M	4600	4.94	44.94	18
+Pedro Neto	F	4400	6.4	11.63	16
+Nicolas Otamendi	D	3800	0	59.52	23
+Jack O'Connell	D	3300	2.94	90.00	18
+Chris Basham	D	3400	6.28	87.00	18
+Ilkay Gundogan	M	5400	0.84	69.48	23
+Eric Garcia	D	3300	5.14	12.20	10
+John Egan	D	3100	1.44	84.39	18
+Naby Keita	M	5000	1.2	23.67	15
+Fernandinho	M	4000	1.58	75.64	22
+Pedro	M/F	6100	0	32.08	12
+Callum Robinson	M/F	4500	2.92	34.24	17
+Xherdan Shaqiri	M/F	6600	0	13.62	13
+Max Kilman	D	2700	2.9	6.92	13
+Benjamin Mendy	D	4000	0	53.59	17
+John Lundstram	M	3900	0	88.33	18
+David McGoldrick	F	4500	1.18	71.93	15
+Muhamed Besic	M	3500	2.4	2.71	17
+James Milner	M	6200	0.02	39.83	23
+Matt Doherty	D	4200	0	73.53	17
+Jorginho	M	4100	14.96	74.48	23
+Ryan Bennett	D	3000	0.84	38.33	12
+Joao Cancelo	D	4800	0	32.67	24
+Phil Foden	M	6900	3.08	15.48	21
+Ross Barkley	M	5500	0	29.08	12
+Nicolas Pepe	F	7400	1.04	56.11	18
+Granit Xhaka	M	3400	0	84.46	13
+Callum Hudson-Odoi	F	7000	2.52	31.33	15
+Rob Holding	D	2600	0	15.40	5
+Romain Saiss	M	3600	4.42	70.20	15
+Marcos Alonso	D	5400	0	56.44	16
+Sead Kolasinac	D	5200	0	62.00	15
+Andreas Christensen	D	3100	0	42.60	20
+Shkodran Mustafi	D	3000	0.08	30.00	3
+Leander Dendoncker	M	3700	1.94	82.83	18
+Hector Bellerin	D	3500	0	52.60	5
+Phil Jagielka	D	3000	0	8.00	16
+Ben Osborn	M	3100	0	4.55	11
+Kean Bryan	D	2700	0	47.00	2
+Michy Batshuayi	F	6300	0	9.23	22
+Joel Matip	D	3000	0	80.00	9
+Willy Boly	D	3100	0	89.88	8
+Gabriel Jesus	F	8500	2.08	55.82	22
+Billy Sharp	F	3800	1.04	15.75	16
+Leroy Sane	M/F	7500	0	13.00	1
+Kieran Tierney	D	4400	0	33.22	9
+Dani Ceballos	M	5100	0	60.36	11
+Billy Gilmour	M	3400	0	1.80	5
+Divock Origi	F	7700	0.06	23.48	21
