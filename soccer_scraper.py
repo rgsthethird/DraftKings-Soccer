@@ -44,7 +44,7 @@ chosen_league = League(league, leagues[league], season)
 
 # For each player in each team...
 for team in chosen_league.teams:
-# team = Team("Nîmes","1cbf5f9e",season)
+# team = Team("Celta Vigo","f25da7fb",season)
 
     print()
     print("------------ "+team.name+" ------------")
@@ -53,14 +53,15 @@ for team in chosen_league.teams:
 
         print("Scraping "+player.name+"...")
 
-        # Scrape player data from each page
-        summary = Scraper(player.url_code, player.season, player.name).summary_scrape()
-        passes = Scraper(player.url_code, player.season, player.name).passing_scrape()
-        pass_types = Scraper(player.url_code, player.season, player.name).pass_types_scrape()
-        gca = Scraper(player.url_code, player.season, player.name).gca_scrape()
-        defense = Scraper(player.url_code, player.season, player.name).defense_scrape()
-        possession = Scraper(player.url_code, player.season, player.name).possession_scrape()
-        misc = Scraper(player.url_code, player.season, player.name).misc_scrape()
+        # Scrape player data from each page using Scraper
+        scraper = Scraper(player.url_code, player.season, player.name)
+        summary = scraper.summary_scrape()
+        passes = scraper.passing_scrape()
+        pass_types = scraper.pass_types_scrape()
+        gca = scraper.gca_scrape()
+        defense = scraper.defense_scrape()
+        possession = scraper.possession_scrape()
+        misc = scraper.misc_scrape()
 
         # Populate main Excel sheet with raw player data
         index = 0

@@ -8,12 +8,14 @@ class Scraper:
         self.player_name = player_name
         self.valid_comps = ["Premier League", "Championship", "Serie A", "La Liga", "Bundesliga", "Ligue 1", "Coupe de France", "Copa del Rey", "DFB-Pokal", "Coppa Italia", "FA Cup", "Europa Lg", "Champions Lg"]
 
+    # Creates soup using player's url code, the season, and the specific page
     def make_soup(self, page):
         url = "https://fbref.com/en/players/"+self.url_code+"/matchlogs/"+self.season+"/"+page+"/"
         r = requests.get(url)
         soup = BeautifulSoup(r.text, 'html.parser')
         return soup
 
+    # Prepares scraper for summary scrape
     def summary_scrape(self):
         soup = self.make_soup("summary")
         excluded_stats = ["round","result","game_started","match_report"]
@@ -35,6 +37,7 @@ class Scraper:
 
         return self.scrape(match_header, soup, excluded_stats)
 
+    # Each of these gets soup using specific page and sends to scraper, excluding unwanted stats
     def passing_scrape(self):
         soup = self.make_soup("passing")
         excluded_stats = ["date","dayofweek","comp","round","venue","result","squad","opponent","game_started","position","minutes","passes_completed","passes","passes_pct","passes_progressive_distance","assists","xa","match_report"]
@@ -74,18 +77,23 @@ class Scraper:
     # Actual scraper
     def scrape(self, match_header, soup, excluded_stats):
         matches = []
+        # Locates data table
         data_tables = soup.find("table", {"class": "stats_table"}).find("tbody").find_all("tr", {"class": ""})
         for data_table in data_tables:
+            # If this row is for valid competition and not for goalkeeper...
             if data_table.find("td", {"data-stat": "comp"}).find("a").text in self.valid_comps and data_table.find("td", {"data-stat": "position"}).text != "GK":
                 match = []
+                # If it's the summary (first) array, add header
                 if len(match_header) > 0:
                     for head_datum in match_header:
                         match.append(head_datum)
                 data = data_table.contents
                 for datum in data:
+                    # If stat is wanted, add it to the match array
                     if datum.get("data-stat") not in excluded_stats:
                         text = datum.text
                         stat = datum.get("data-stat")
+                        # Specifically to remove country codes from teams in European competitions
                         if len(match_header) > 0 and (stat == "squad" or stat == "opponent") and text[0].islower():
                             space_position = text.find(" ")
                             match.append(text[space_position+1:])
