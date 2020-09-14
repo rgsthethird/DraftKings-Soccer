@@ -1,6 +1,7 @@
 from groups import Player, Team, League
 from scraper import Scraper
 from calculator import Calculator
+from timer import Timer
 
 # openpyxl setup
 try:
@@ -42,26 +43,37 @@ if xlInstalled:
 print()
 chosen_league = League(league, leagues[league], season)
 
+# Creates timer for time estimate
+timer = Timer(chosen_league)
+
 # For each player in each team...
 for team in chosen_league.teams:
 # team = Team("Celta Vigo","f25da7fb",season)
 
     print()
-    print("------------ "+team.name+" ------------")
+    print("------------ "+team.name+" ------------   (Est. time remaining: "+timer.time_remaining()+")")
 
     for player in team.players:
 
         print("Scraping "+player.name+"...")
 
-        # Scrape player data from each page using Scraper
-        scraper = Scraper(player.url_code, player.season, player.name)
-        summary = scraper.summary_scrape()
-        passes = scraper.passing_scrape()
-        pass_types = scraper.pass_types_scrape()
-        gca = scraper.gca_scrape()
-        defense = scraper.defense_scrape()
-        possession = scraper.possession_scrape()
-        misc = scraper.misc_scrape()
+        # Scrape player data from each page using Scraper, with 3 attempts in case of anomalous error which sometimes occurs
+        attempts = 0
+        successful = False
+        while attempts < 3 and not successful:
+            try:
+                scraper = Scraper(player.url_code, player.season, player.name)
+                summary = scraper.summary_scrape()
+                passes = scraper.passing_scrape()
+                pass_types = scraper.pass_types_scrape()
+                gca = scraper.gca_scrape()
+                defense = scraper.defense_scrape()
+                possession = scraper.possession_scrape()
+                misc = scraper.misc_scrape()
+                successful = True
+            except:
+                attempts += 1
+                pass
 
         # Populate main Excel sheet with raw player data
         index = 0
@@ -98,6 +110,6 @@ for team in chosen_league.teams:
 
             ws2.append(avg_calc.get_averages())
 
+wb.save(excelFile)
 print()
 print("Finished! The Excel file is located in the program directory.")
-wb.save(excelFile)
