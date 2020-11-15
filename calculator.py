@@ -1,4 +1,3 @@
-
 class Calculator:
     def __init__(self, match):
         self.match = match
@@ -15,7 +14,10 @@ class Calculator:
 
     # Calculates averages for each stat in data
     def calc_averages(self, data, first_index):
-        data_size = len(data[0])
+        try:
+            data_size = len(data[0])
+        except:
+            data_size = first_index
         for i in range(first_index, data_size):
             sum = 0
             count = 0
@@ -35,6 +37,16 @@ class Calculator:
     def get_match(self):
         return self.match
 
-    # Returns averages array
-    def get_averages(self):
-        return self.averages
+    # Returns averages per 90 minutes array
+    def get_averages(self,average_minutes):
+        averages = []
+        try:
+            multiplier = 90/average_minutes
+        except:
+            multiplier = 0
+        for average in self.averages:
+            try:
+                averages.append(round(float(average*multiplier,2)))
+            except:
+                averages.append(average)
+        return averages
